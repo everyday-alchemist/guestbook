@@ -20,9 +20,9 @@
 (deftest test-messages
   (jdbc/with-transaction [t-conn *db* {:rollback-only true}]
     (is (= 1 (db/save-message!
-               t-conn
-               {:name "Bob"
-                :message "Hello world"})))
+              t-conn
+              {:name "Bob"
+               :message "Hello world"})))
     (is (= {:name "Bob"
             :message "Hello world"}
            (-> (db/get-messages t-conn {})
