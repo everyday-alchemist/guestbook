@@ -1,0 +1,10 @@
+2021-09-17 02:07:24 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SCHEMA_MIGRATIONS" not found; SQL statement:
+SELECT 1 FROM schema_migrations [42102-200]
+2021-09-17 03:10:07 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO GUESTBOOK
+(NAME, MESSAGE)
+VALUES (? ?[*])"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO guestbook
+(name, message)
+VALUES (? ?) [42001-200]
